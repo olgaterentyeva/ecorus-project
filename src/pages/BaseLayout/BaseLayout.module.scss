@@ -1,10 +1,94 @@
-h1{
-  color: red;
-  margin: 0 auto;
+@import "../../styles/mixins";
+
+.header{
+  padding: 30px 200px;
+  border-bottom: 1px solid $c-grey;
+
+  &__container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-.red{
-  width: 100px;
-  background-color: blue;
-  color: green;
+nav{
+  display: flex;
+  .link{
+    @include regular-text;
+    text-decoration: none;
+  }
+  .link:not(:first-child){
+    margin-left: 24px;
+  }
+
+  .activeLink{
+    border-bottom: 3px solid $c-green;
+    border-radius: 50% 50% 0 0 ;
+  }
+
+  .logo{
+    width: 94px;
+    height: 18px;
+    padding-right: 50px;
+  }
+}
+
+.actions{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__link:last-child{
+    padding-left: 51px;
+  }
+  img{
+    padding-right: 8px;
+  }
+}
+
+.main{
+  margin-top: 40px;
+  &__container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+}
+
+.footer{
+  border-top: 1px solid #F5F5F5;
+  padding: 30px 200px;
+  position: fixed;
+  left: 0; bottom: 0;
+
+  &__container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  &__contact{
+    display: flex;
+    align-items: center;
+    a{
+      text-decoration: none;
+      @include primary-text
+    }
+    img{
+      padding-right: 10px;
+    }
+  }
+  &__contact:last-child{
+    margin-left: 31px;
+  }
 }

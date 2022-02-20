@@ -1,1 +1,29 @@
-@import "colors";
+@import "colors";@import "colors";
+
+@mixin regular-style{
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin regular-text{
+  @include regular-style;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.15px;
+  color: $c-grey;
+}
+
+@mixin primary-text{
+  @include regular-style;
+  font-size: 16px;
+  line-height: 22px;
+  color: $c-grey;
+}
+
+@mixin secondary-text{
+  @include regular-style;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 11, 38, 0.8);
+}
