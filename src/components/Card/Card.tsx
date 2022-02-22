@@ -1,6 +1,5 @@
 import styles from "./Card.module.scss";
 import {Button} from "../ui/Button/Button";
-import {Icon} from "../../icon/Icon";
 
 export const Card = (props:any) => {
 
@@ -16,7 +15,7 @@ export const Card = (props:any) => {
                   <p>{props.cardText}</p>
                   <Button type={props.type} onClick={onServiceConditionClick} buttonText="Условия сервиса"/>
               </div>
-              <Icon name = "serviceCondition" width="560" height="320"/>
+              <img src={props.img} alt="serviceCondition"/>
           </div>
       </>
   )

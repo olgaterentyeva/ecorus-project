@@ -66,6 +66,9 @@ nav{
 .footer{
   border-top: 1px solid #F5F5F5;
   padding: 30px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   &__container{
     max-width: 1200px;
@@ -73,7 +76,6 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-
   }
 
   &__contact{

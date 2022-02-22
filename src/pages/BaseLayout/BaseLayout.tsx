@@ -2,6 +2,7 @@ import styles from "./BaseLayout.module.scss";
 import {FC, ReactNode} from "react";
 import {Link, NavLink} from "react-router-dom";
 import {Icon} from "../../icon/Icon";
+import logo from "../../svg-icons/logo.svg";
 
 interface Props {
     children: ReactNode;
@@ -14,7 +15,7 @@ export const BaseLayout: FC<Props> = ({children}) => {
                 <section className={styles.header__container}>
                     <nav>
                         <NavLink to='/'>
-                            <Icon name="logo" width="94" height="18"/>
+                            <img src={logo} alt="logo"/>
                         </NavLink>
 
                         <NavLink to='/' className={styles.link}>Главная</NavLink>
