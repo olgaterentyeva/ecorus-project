@@ -1,17 +1,19 @@
 import React from 'react';
 import './App.scss';
 import {MainPage} from "./pages/MainPage/MainPage"
-import {BrowserRouter, Routes} from "react-router-dom";
-import {Route} from "react-router";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {Ecomarket} from "./pages/Ecomarket/Ecomarket";
-import {BaseLayout} from "./pages/BaseLayout/BaseLayout";
+import {CollectionPoints} from "./pages/CollectionPoints/CollectionPoints";
+import {AboutService} from "./pages/AboutService/AboutService";
 
-function App() {
+const App = () => {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<MainPage/>}/>
-                <Route path="/ecomarket" element={<BaseLayout children="hello"/>}/>
+                <Route path="/collpoints" element={<CollectionPoints/>}/>
+                <Route path="/ecomarket" element={<Ecomarket/>}/>
+                <Route path="/aboutservice" element={<AboutService/>}/>
             </Routes>
         </BrowserRouter>
     );
