@@ -17,8 +17,6 @@ export const Card:FC<CardProps> = (props) => {
         console.log("pressed the service condition button");
     }
 
-
-
   return(
       <>
           <div className={styles.section} style={{"backgroundColor": `${props.bgColor}`}}>
