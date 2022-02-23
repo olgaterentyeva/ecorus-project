@@ -1,5 +1,24 @@
+@import "../../styles/mixins";
+
 .swiper-button-prev,
 .swiper-button-next {
-  background-image: url("src/svg-icons/prev-arrow.svg");
+  width: 44px;
+  height: 44px;
+  background: $c-white no-repeat center;
+  border: none;
+  border-radius: 50px;
 }
 
+.swiper-button-prev {
+  background-image: url("../../svg-icons/prev-arrow.svg");
+}
+
+.swiper-button-next {
+  background-image: url("../../svg-icons/next-arrow.svg");
+  //right: -20px; если что менять так, но тогда они срезаеются когда контент заканчивается
+
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  display: none;
+}

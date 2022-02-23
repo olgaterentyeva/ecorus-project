@@ -1,7 +1,8 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, {Navigation} from 'swiper';
 import 'swiper/scss';
-// import 'swiper/scss/navigation';
+import 'swiper/scss/navigation';
+import './Slider.scss';
 import {Card} from "../Card/Card";
 import serviceCondition from "../../svg-icons/serviceCondition.svg";
 import plastic from "../../svg-icons/plastic.svg";
@@ -10,11 +11,11 @@ import masks from "../../svg-icons/masks.svg";
 
 export const Slider = () => {
 
-    // SwiperCore.use([Navigation]);
+    SwiperCore.use([Navigation]);
 
     return (
         <Swiper
-            // navigation
+            navigation
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
