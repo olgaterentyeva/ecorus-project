@@ -1,0 +1,17 @@
+@import "../../../styles/mixins";
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 28px;
+  color: $c-dark;
+  opacity: 90%;
+
+  &Active {
+    border-bottom: 3px solid #07C88E;
+    padding-bottom: 29px;
+    opacity: 200%;
+  }
+}

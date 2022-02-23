@@ -1,7 +1,7 @@
 @import "../../styles/mixins";
 
 .header{
-  padding: 0 200px;
+  padding: 0 160px;
   border-bottom: 1px solid $c-light-grey;
 
   &__container{
@@ -22,17 +22,7 @@ nav{
     @include regular-text;
     text-decoration: none;
     margin-left: 26px;
-    padding: 27px 0;
   }
-  .activeLink{
-    @include regular-text;
-    text-decoration: none;
-    color: black;
-    border-bottom: 3px solid $c-green;
-    margin-left: 26px;
-    padding: 27px 0;
-  }
-
   .logo{
     width: 94px;
     height: 18px;
@@ -63,16 +53,12 @@ nav{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-
   }
 }
 
 .footer{
   border-top: 1px solid $c-light-grey;
-  padding: 30px 200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 30px 160px;
 
   &__container{
     max-width: 1200px;
@@ -89,11 +75,10 @@ nav{
       text-decoration: none;
       @include primary-text
     }
-    img{
-      padding-right: 10px;
-    }
   }
   &__contact:last-child{
     margin-left: 31px;
   }
 }
+
+
