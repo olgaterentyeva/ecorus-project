@@ -1,0 +1,30 @@
+@import "../../styles/mixins.scss";
+
+.informBlock {
+  border: 2px solid $c-light-grey;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-top: 48px;
+
+  h1 {
+    @include infoBlockText
+  }
+
+  p {
+    @include secondary-text
+  }
+
+  img {
+    width: 280px;
+    height: 250px;
+  }
+
+  &__info {
+    .cardButton {
+      background: $c-light-grey;
+    }
+  }
+}
