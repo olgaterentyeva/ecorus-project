@@ -7,7 +7,7 @@ export const MainPage = () => {
     return (
         <BaseLayout>
            <Slider/>
-           <Slider/>
+
         </BaseLayout>
     );
 }
