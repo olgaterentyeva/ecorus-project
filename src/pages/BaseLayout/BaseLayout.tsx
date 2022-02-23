@@ -1,8 +1,10 @@
 import styles from "./BaseLayout.module.scss";
 import {FC, ReactNode} from "react";
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {Icon} from "../../icon/Icon";
 import logo from "../../svg-icons/logo.svg";
+
+const setActive = ({isActive}:any) =>`${isActive ? styles.activeLink : styles.link}`
 
 interface Props {
     children: ReactNode;
@@ -18,14 +20,12 @@ export const BaseLayout: FC<Props> = ({children}) => {
                             <img src={logo} alt="logo"/>
                         </NavLink>
 
-                        <NavLink to='/' className={styles.link}>Главная</NavLink>
-                        <NavLink to='/collpoints' className={styles.link}>Пункты
+                        <NavLink to='/' className={setActive}>Главная</NavLink>
+                        <NavLink to='/collpoints' className={setActive}>Пункты
                             сбора
                         </NavLink>
-                        <NavLink to='/ecomarket' className={styles.link}>ЭкоМаркет</NavLink>
-                        <NavLink to='/aboutservice' className={styles.link}>О
-                            сервисе
-                        </NavLink>
+                        <NavLink to='/ecomarket' className={setActive}>ЭкоМаркет</NavLink>
+                        <NavLink to='/aboutservice' className={setActive}>О сервисе</NavLink>
                     </nav>
 
                     <div className={styles.actions}>

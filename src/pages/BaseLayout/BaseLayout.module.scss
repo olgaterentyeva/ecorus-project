@@ -1,7 +1,7 @@
 @import "../../styles/mixins";
 
 .header{
-  padding: 30px 200px;
+  padding: 0 200px;
   border-bottom: 1px solid $c-grey;
 
   &__container{
@@ -15,18 +15,22 @@
 
 nav{
   display: flex;
+  img {
+    padding-top: 27px;
+  }
   .link{
     @include regular-text;
     text-decoration: none;
-    margin: 0 auto;
+    margin-left: 26px;
+    padding: 27px 0;
   }
-  .link:not(:first-child){
-    margin-left: 24px;
-  }
-
   .activeLink{
+    @include regular-text;
+    text-decoration: none;
+    color: black;
     border-bottom: 3px solid $c-green;
-    border-radius: 50% 50% 0 0 ;
+    margin-left: 26px;
+    padding: 27px 0;
   }
 
   .logo{
