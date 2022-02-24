@@ -25,7 +25,7 @@ export const Slider = () => {
                     cardHeadline="Сделаем мир чище"
                     cardText="Сдай макулатуру или старую одежду и получи скидку на покупку товаров из переработанных материалов"
                     type="button"
-                    buttonText = "Условия сервиса"
+                    buttonText="Условия сервиса"
                     img={serviceCondition}
                     bgColor={"#B3EDC8"}
                 />
@@ -35,7 +35,7 @@ export const Slider = () => {
                     cardHeadline="А вы знали...."
                     cardText="что среднее время разложения пластмассовых изделий колеблется от 400 до 700 лет,  а полиэтиленовых пакетов — от 100 до 200 лет?"
                     type="button"
-                    buttonText = "Узнать больше"
+                    buttonText="Узнать больше"
                     img={plastic}
                     bgColor={"#FFE48F"}
 
@@ -46,7 +46,7 @@ export const Slider = () => {
                     cardHeadline="Что с масками?"
                     cardText="Медицинские маски не обязательно должны становиться отходами. Их тоже можно сдать на переработку."
                     type="button"
-                    buttonText = "Пункты сбора масок"
+                    buttonText="Пункты сбора масок"
                     img={masks}
                     bgColor={"#BFF0DE"}
                 />

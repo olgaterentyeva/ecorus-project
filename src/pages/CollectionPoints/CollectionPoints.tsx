@@ -1,4 +1,4 @@
-import {BaseLayout} from "../BaseLayout/BaseLayout";
+import {BaseLayout} from "../../components/BaseLayout/BaseLayout";
 import styles from "./CollectionPoints.module.scss";
 
 export const CollectionPoints = () => {

@@ -1,4 +1,4 @@
-import {BaseLayout} from "../BaseLayout/BaseLayout";
+import {BaseLayout} from "../../components/BaseLayout/BaseLayout";
 import {Card} from "../../components/Card/Card";
 import {Slider} from "../../components/Swiper/Slider";
 import {BottomCard} from "../../components/BottomCard/BottomCard";

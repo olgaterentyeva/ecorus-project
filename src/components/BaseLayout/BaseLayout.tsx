@@ -3,7 +3,7 @@ import {FC, ReactNode} from "react";
 import {NavLink} from "react-router-dom";
 import {Icon} from "../../icon/Icon";
 import logo from "../../svg-icons/logo.svg";
-import {CustomLink} from "../../components/ui/customLink/CustomLink";
+import {CustomLink} from "../ui/СustomLink/CustomLink";
 
 interface Props {
     children: ReactNode;

@@ -7,15 +7,18 @@
   background: $c-white no-repeat center;
   border: none;
   border-radius: 50px;
+  box-shadow: 0px 4px 24px rgba(0, 11, 38, 0.12)
 }
 
 .swiper-button-prev {
   background-image: url("../../svg-icons/prev-arrow.svg");
+  margin-left: -22px;
 }
 
 .swiper-button-next {
   background-image: url("../../svg-icons/next-arrow.svg");
   //right: -20px; если что менять так, но тогда они срезаеются когда контент заканчивается
+  margin-right: -22px;
 
 }
 
