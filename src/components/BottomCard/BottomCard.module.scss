@@ -10,11 +10,13 @@
   margin-top: 48px;
 
   h1 {
-    @include infoBlockText
+    @include infoBlockText;
+    margin-bottom: 14px;
   }
 
   p {
-    @include secondary-text
+    @include secondary-text;
+    margin-bottom: 40px;
   }
 
   img {

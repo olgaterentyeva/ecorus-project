@@ -34,6 +34,7 @@ nav{
   display: flex;
   flex-direction: row;
   align-items: center;
+  @include primary-text;
   &__link{
     display: flex;
     flex-direction: row;
@@ -45,10 +46,13 @@ nav{
   img{
     padding-right: 8px;
   }
+  p{
+    color: $c-grey;
+  }
 }
 
 .main{
-  margin-top: 40px;
+  margin-top: 20px;
   &__container{
     max-width: 1200px;
     width: 100%;
