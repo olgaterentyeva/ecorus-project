@@ -1,8 +1,9 @@
 import styles from "./BaseLayout.module.scss";
 import {FC, ReactNode} from "react";
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {Icon} from "../../icon/Icon";
 import logo from "../../svg-icons/logo.svg";
+import {CustomLink} from "../ui/СustomLink/CustomLink";
 
 interface Props {
     children: ReactNode;
@@ -18,14 +19,12 @@ export const BaseLayout: FC<Props> = ({children}) => {
                             <img src={logo} alt="logo"/>
                         </NavLink>
 
-                        <NavLink to='/' className={styles.link}>Главная</NavLink>
-                        <NavLink to='/collpoints' className={styles.link}>Пункты
+                        <CustomLink to='/' className={styles.link}>Главная</CustomLink>
+                        <CustomLink to='/collpoints' className={styles.link}>Пункты
                             сбора
-                        </NavLink>
-                        <NavLink to='/ecomarket' className={styles.link}>ЭкоМаркет</NavLink>
-                        <NavLink to='/aboutservice' className={styles.link}>О
-                            сервисе
-                        </NavLink>
+                        </CustomLink>
+                        <CustomLink to='/ecomarket' className={styles.link}>ЭкоМаркет</CustomLink>
+                        <CustomLink to='/aboutservice' className={styles.link}>О сервисе</CustomLink>
                     </nav>
 
                     <div className={styles.actions}>

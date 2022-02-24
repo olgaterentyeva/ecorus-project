@@ -1,4 +1,44 @@
-.swiper-button-prev,
-.swiper-button-next {
-  background-image: url("src/svg-icons/prev-arrow.svg");
+@import "../../styles/mixins";
+
+.slider {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 180px;
+    z-index: 10;
+    cursor: pointer;
+  }
 }
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  width: 44px;
+  height: 44px;
+  background: $c-white no-repeat center;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 24px rgba(0, 11, 38, 0.12);
+}
+
+.swiper-button-prev-custom {
+  background-image: url("../../svg-icons/prev-arrow.svg");
+  margin-left: -22px;
+}
+
+.swiper-button-next-custom {
+  background-image: url("../../svg-icons/next-arrow.svg");
+  margin-right: -22px;
+}
+
+.swiper-button-prev-custom.swiper-button-disabled,
+.swiper-button-next-custom.swiper-button-disabled {
+  opacity: 1;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  display: none;
+}
+
+

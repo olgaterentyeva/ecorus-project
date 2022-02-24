@@ -1,12 +1,10 @@
 @import "../../styles/mixins";
 
 .section{
-  background-color: $c-light-green;
   display: flex;
   align-content: center;
   flex-direction: row;
   justify-content: space-between;
-  padding-right: 70px;
   padding-left: 64px;
   border-radius: 20px;
 
@@ -27,7 +25,8 @@
 
   img{
     width: 560px;
-    height: 320px;
+    padding-left: 90px;
+    border-radius: 20px;
   }
   &__info{
     margin-top: 56px;

@@ -1,4 +1,4 @@
-import {BaseLayout} from "../BaseLayout/BaseLayout";
+import {BaseLayout} from "../../components/BaseLayout/BaseLayout";
 
 export const Ecomarket = () => {
     return (

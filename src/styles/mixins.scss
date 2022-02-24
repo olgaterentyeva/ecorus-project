@@ -1,4 +1,4 @@
-@import "colors";@import "colors";
+@import "colors";
 
 @mixin regular-style{
   font-family: Inter, sans-serif;
@@ -25,5 +25,14 @@
   @include regular-style;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 11, 38, 0.8);
+  color: $c-grey;
+}
+
+@mixin infoBlockText{
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: $c-dark;
 }
