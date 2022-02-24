@@ -1,5 +1,9 @@
+@import "./styles/mixins";
+
 body {
   margin: 0;
+  background: $c-white;
+  color: $c-dark;
 }
 
 code {

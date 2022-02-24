@@ -1,6 +1,7 @@
 @import "../../styles/mixins";
 
 .header{
+  padding: 0 160px;
   border-bottom: 1px solid $c-light-grey;
 
   &__container{
@@ -9,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
   }
 }
 
@@ -58,7 +58,7 @@ nav{
 
 .footer{
   border-top: 1px solid $c-light-grey;
-  padding: 30px 0px;
+  padding: 30px 160px;
 
   &__container{
     max-width: 1200px;
@@ -66,7 +66,6 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 auto;
   }
 
   &__contact{
