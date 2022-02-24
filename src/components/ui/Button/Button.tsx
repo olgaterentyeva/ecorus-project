@@ -5,7 +5,7 @@ interface ButtonProps {
     type: any,
     onClick: any,
     buttonText?: string,
-    buttonImg?: any
+    buttonImg?: any,
     buttonColor: string
 }
 
