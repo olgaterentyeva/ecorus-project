@@ -23,7 +23,10 @@ export const Slider = () => {
                 </div>
 
                 <Swiper
-                    navigation
+                    navigation = {{
+                        prevEl:".swiper-button-prev-custom",
+                        nextEl:".swiper-button-next-custom"
+                    }}
                     slidesPerView={1}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
