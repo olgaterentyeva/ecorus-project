@@ -23,12 +23,16 @@
 }
 
 .swiper-button-prev-custom {
-  background-image: url("../../svg-icons/prev-arrow.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: -22px;
 }
 
 .swiper-button-next-custom {
-  background-image: url("../../svg-icons/next-arrow.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: -22px;
 }
 

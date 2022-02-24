@@ -7,6 +7,7 @@ import {Card} from "../Card/Card";
 import serviceCondition from "../../svg-icons/serviceCondition.svg";
 import plastic from "../../svg-icons/plastic.svg";
 import masks from "../../svg-icons/masks.svg";
+import { Icon } from "../../icon/Icon";
 
 export const Slider = () => {
 
@@ -17,8 +18,10 @@ export const Slider = () => {
             <div className="slider">
                 <div className = "navigation">
                     <div className="swiper-button-prev-custom">
+                        <Icon name = "prev-arrow" width={24} height={24}/>
                     </div>
                     <div className="swiper-button-next-custom">
+                        <Icon name = "next-arrow" width={24} height={24}/>
                     </div>
                 </div>
 
