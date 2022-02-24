@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "prettier": "^2.5.1",
     "svgstore": "^3.0.1"
   }
 }
